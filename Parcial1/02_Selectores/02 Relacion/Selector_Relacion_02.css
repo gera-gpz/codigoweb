@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#contenedorExterno {
+    width: 700px;
+    height: 300px;
+    background-color: blue;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+#contenedorInterno {
+    border: 1px solid white;
+}
+
+.caja {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+
+
+#contenedorExterno .caja {                 /*Descendiente*/
+    background-color: yellow;
+}
+
+
+#contenedorInterno > .caja {               /*Descendiente Directo*/
+    background-color: white;
+}
+
+#caja1 .caja {                           /*ID con la clase*/
+    background-color: purple;
+}
